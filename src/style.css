@@ -1,0 +1,93 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  --color: rgba(255, 255, 255, 0.87);
+  --bg-color: #242424;
+  --btn-color: #2b2b2b;
+  --card-bg: #1e1e1e;
+  --border-color-soft: #1c1c1c;
+  --border-color: #f1f1f1;
+  --accent-color: #9174e8;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  color: #ffffff;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+html, body, #body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+}
+
+#body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.app-card {
+  background-color: var(--card-bg);
+  width: 96vw;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 0 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h4 {
+  font-weight: 400;
+}
+
+button {
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color-soft);
+  padding: 10px 15px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+button:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.toggle {
+  transition: 0.2s;
+}
+
+.status-off {
+  color: #FF0000;
+}
+
+.status-on {
+  color: #90EE90;
+}
+
+.sub {
+  display: flex;
+}
+
+svg {
+  fill: var(--color);
+}
